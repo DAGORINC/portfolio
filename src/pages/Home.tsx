@@ -3,6 +3,7 @@ import Name from '../components/Name';
 import Role from '../components/Role';
 import { Stack } from '@mui/material';
 import ProjectSwiper from '../components/ProjectSwiper';
+import cv from '../assets/Damian Gorzkowski CV.pdf';
 import ufo01 from '../assets/ufo/01.png'
 import ufo02 from '../assets/ufo/02.png'
 import ufo03 from '../assets/ufo/03.png'
@@ -37,6 +38,7 @@ import kamea1 from '../assets/kamea/1.jpg'
 import kamea2 from '../assets/kamea/2.jpg'
 import kamea3 from '../assets/kamea/3.jpg'
 import kamea4 from '../assets/kamea/4.jpg'
+import muiIcon from '../assets/logos/mui.png'
 import ProjectName from '../components/ProjectName';
 import Line from '../components/Line';
 import Description from '../components/Description';
@@ -58,6 +60,7 @@ import { Label } from '../components/Label';
 import Container from '../components/Container';
 import MenuButton from '../components/MenuButton';
 import Link from '../components/Link';
+import CVButton from '../components/CVButton';
 
 
 interface HomeProps {
@@ -157,6 +160,9 @@ const Home: FC<HomeProps> = (props) => {
                     <Role>
                         frontend developer
                     </Role>
+                    <CVButton 
+                        cv={cv}
+                    />
                 </Stack>
 
                 <Line />
@@ -166,7 +172,8 @@ const Home: FC<HomeProps> = (props) => {
                 </Label>
 
                 <Description>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quaerat hic veritatis id ad nemo minima doloribus laboriosam unde tempora omnis, enim accusamus sunt error, itaque sed voluptas? Cum, sequi?
+                    Programowaniem zająłem się szukając rozwiązania na monotonne czynności towarzyszące mi w pracy, po pewnym czasie zająłem się tym na poważnie.
+                    Teraz zainteresowanie próbuję przekuć w zawód. Jestem studentem studiów inżynierskich.
                 </Description>
 
                 <Line />
@@ -197,6 +204,10 @@ const Home: FC<HomeProps> = (props) => {
                     <TechnologyItem
                         name='Nodejs'
                         img={nodeLogo}
+                    />
+                    <TechnologyItem 
+                        name='Mui'
+                        img={muiIcon}
                     />
                 </TechnologyContainer>
 

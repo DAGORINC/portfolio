@@ -50,7 +50,7 @@ const ProjectSwiper: FC<ProjectSwiperProps> = ({
 
 
     return (
-        <>
+        <div>
 
             <Swiper
                 effect={'coverflow'}
@@ -98,7 +98,7 @@ const ProjectSwiper: FC<ProjectSwiperProps> = ({
                     <IoIosArrowForward />
                 </NavArrow>
             </NavLeftArrowContainer>
-        </>
+        </div>
     )
 }
 

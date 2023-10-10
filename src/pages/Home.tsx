@@ -172,7 +172,7 @@ const Home: FC<HomeProps> = (props) => {
                 </Label>
 
                 <Description>
-                    Programowaniem zająłem się szukając rozwiązania na monotonne czynności towarzyszące mi w pracy, po pewnym czasie zająłem się tym na poważnie.
+                    Programowaniem zająłem się szukając rozwiązań na monotonne czynności towarzyszące mi w pracy, po pewnym czasie zająłem się tym na poważnie.
                     Teraz zainteresowanie próbuję przekuć w zawód. Jestem studentem studiów inżynierskich.
                 </Description>
 

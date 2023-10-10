@@ -61,6 +61,7 @@ import Container from '../components/Container';
 import MenuButton from '../components/MenuButton';
 import Link from '../components/Link';
 import CVButton from '../components/CVButton';
+import GitButton from '../components/GitButton';
 
 
 interface HomeProps {
@@ -160,9 +161,15 @@ const Home: FC<HomeProps> = (props) => {
                     <Role>
                         frontend developer
                     </Role>
-                    <CVButton 
-                        cv={cv}
-                    />
+
+                    <div style={{display: 'flex'}}>
+                        <CVButton
+                            cv={cv}
+                        />
+                        <GitButton
+                            link={'https://github.com/dagorinc'}
+                        />
+                    </div>
                 </Stack>
 
                 <Line />
@@ -205,7 +212,7 @@ const Home: FC<HomeProps> = (props) => {
                         name='Nodejs'
                         img={nodeLogo}
                     />
-                    <TechnologyItem 
+                    <TechnologyItem
                         name='Mui'
                         img={muiIcon}
                     />

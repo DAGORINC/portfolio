@@ -62,6 +62,7 @@ import MenuButton from '../components/MenuButton';
 import Link from '../components/Link';
 import CVButton from '../components/CVButton';
 import GitButton from '../components/GitButton';
+import CountsController from '../api/countsController';
 
 
 interface HomeProps {
@@ -70,6 +71,7 @@ interface HomeProps {
 
 const Home: FC<HomeProps> = (props) => {
 
+    const [viewRecorded, setViewRecorded] = useState(false);
     const contactSectionRef = useRef<HTMLDivElement | null>(null);
     const aboutSectionRef = useRef<HTMLDivElement | null>(null);
     const technologiesSectionRef = useRef<HTMLDivElement | null>(null);
@@ -112,6 +114,18 @@ const Home: FC<HomeProps> = (props) => {
     }
 
 
+    const addCount = async () => {
+        if (!viewRecorded) {
+            await CountsController.addCount('home')
+            setViewRecorded(true);
+            console.log(viewRecorded);
+        }
+    }
+
+    useEffect(() => {
+        addCount();
+    }, [])
+
     useEffect(() => {
         getCurrentScreenSize()
         window.addEventListener('resize', getCurrentScreenSize);
@@ -119,7 +133,6 @@ const Home: FC<HomeProps> = (props) => {
             window.removeEventListener('resize', getCurrentScreenSize)
         }
     }, [])
-
 
     return (
         <Container maxWidth={1200}>
@@ -162,7 +175,7 @@ const Home: FC<HomeProps> = (props) => {
                         frontend developer
                     </Role>
 
-                    <div style={{display: 'flex'}}>
+                    <div style={{ display: 'flex' }}>
                         <CVButton
                             cv={cv}
                         />

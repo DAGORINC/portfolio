@@ -62,7 +62,6 @@ import MenuButton from '../components/MenuButton';
 import Link from '../components/Link';
 import CVButton from '../components/CVButton';
 import GitButton from '../components/GitButton';
-import CountsController from '../api/countsController';
 
 
 interface HomeProps {
@@ -112,19 +111,6 @@ const Home: FC<HomeProps> = (props) => {
             projectsSectionRef.current.scrollIntoView({ behavior: 'smooth' });
         }
     }
-
-
-    const addCount = async () => {
-        if (!viewRecorded) {
-            await CountsController.addCount('home')
-            setViewRecorded(true);
-            console.log(viewRecorded);
-        }
-    }
-
-    useEffect(() => {
-        addCount();
-    }, [])
 
     useEffect(() => {
         getCurrentScreenSize()

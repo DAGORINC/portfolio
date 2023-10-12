@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const addCount = async (pageName: string) => {
-    const url = `http://46.41.139.43:3001/page/${pageName}`;
+    const url = `https://46.41.139.43:3001/page/${pageName}`;
     // const url = `http://localhost:3000/page/${pageName}`;
 
     try {

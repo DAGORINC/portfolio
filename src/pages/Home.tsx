@@ -14,8 +14,6 @@ import ufo07 from '../assets/ufo/07.png'
 import ufo08 from '../assets/ufo/08.png'
 import ufo09 from '../assets/ufo/09.png'
 import ufo10 from '../assets/ufo/10.png'
-import ufo11 from '../assets/ufo/11.png'
-import ufo12 from '../assets/ufo/12.png'
 import ufoMobile01 from '../assets/ufo mobile/01.jpg';
 import ufoMobile02 from '../assets/ufo mobile/02.jpg';
 import ufoMobile03 from '../assets/ufo mobile/03.jpg';
@@ -70,7 +68,6 @@ interface HomeProps {
 
 const Home: FC<HomeProps> = (props) => {
 
-    const [viewRecorded, setViewRecorded] = useState(false);
     const contactSectionRef = useRef<HTMLDivElement | null>(null);
     const aboutSectionRef = useRef<HTMLDivElement | null>(null);
     const technologiesSectionRef = useRef<HTMLDivElement | null>(null);
@@ -111,6 +108,7 @@ const Home: FC<HomeProps> = (props) => {
             projectsSectionRef.current.scrollIntoView({ behavior: 'smooth' });
         }
     }
+
 
     useEffect(() => {
         getCurrentScreenSize()
@@ -178,7 +176,9 @@ const Home: FC<HomeProps> = (props) => {
                 </Label>
 
                 <Description>
-                    Programowaniem zająłem się szukając rozwiązań na monotonne czynności towarzyszące mi w pracy, po pewnym czasie zająłem się tym na poważnie.
+                    Programowaniem zająłem się szukając rozwiązań na monotonne czynności towarzyszące mi 
+                    w pracy, po pewnym czasie zająłem się tym na poważnie, w aktualnej pracy wcześniejsze obowiązki w dużej mierze 
+                    zostały przyćmione przez tworzenie aplikacji.
                     Teraz zainteresowanie próbuję przekuć w zawód. Jestem studentem studiów inżynierskich.
                 </Description>
 
@@ -299,12 +299,12 @@ const Home: FC<HomeProps> = (props) => {
                 <ProjectSwiper
                     id='ufoMobile'
                     images={[
+                        ufoMobile06,
                         ufoMobile01,
                         ufoMobile02,
                         ufoMobile03,
                         ufoMobile04,
                         ufoMobile05,
-                        ufoMobile06,
                         ufoMobile07,
                         ufoMobile08,
                         ufoMobile09,
@@ -322,18 +322,16 @@ const Home: FC<HomeProps> = (props) => {
                     id='ufo'
                     pcSlides={true}
                     images={[
-                        ufo01,
-                        ufo02,
-                        ufo03,
                         ufo04,
-                        ufo05,
+                        ufo03,
+                        ufo02,
                         ufo06,
+                        ufo01,
+                        ufo05,
                         ufo07,
                         ufo08,
                         ufo09,
                         ufo10,
-                        ufo11,
-                        ufo12,
                     ]}
                 />
 

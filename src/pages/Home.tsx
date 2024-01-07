@@ -3,7 +3,7 @@ import Name from '../components/Name';
 import Role from '../components/Role';
 import { Stack } from '@mui/material';
 import ProjectSwiper from '../components/ProjectSwiper';
-import cv from '../assets/Damian Gorzkowski CV.pdf';
+import cv from '../assets/CV.pdf';
 import ufo01 from '../assets/ufo/01.png'
 import ufo02 from '../assets/ufo/02.png'
 import ufo03 from '../assets/ufo/03.png'

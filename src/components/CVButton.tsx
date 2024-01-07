@@ -15,7 +15,7 @@ const CVButton: FC <CVButtonProps> = ({
             endIcon={<BiSolidFilePdf />}
             size="large"
             href={cv}
-            download={'Damian Gorzkowski Frontend Developer CV'}
+            download={'Damian Gorzkowski Frontend Developer CV.pdf'}
             style={{
                 marginTop: '10px'
             }}

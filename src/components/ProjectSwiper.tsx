@@ -51,7 +51,6 @@ const ProjectSwiper: FC<ProjectSwiperProps> = ({
 
     return (
         <div>
-
             <Swiper
                 effect={'coverflow'}
                 grabCursor={true}

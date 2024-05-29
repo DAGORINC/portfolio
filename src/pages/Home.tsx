@@ -3,33 +3,32 @@ import Name from '../components/Name';
 import Role from '../components/Role';
 import { Stack } from '@mui/material';
 import ProjectSwiper from '../components/ProjectSwiper';
-import cv from '../assets/CV.pdf';
-import ufo01 from '../assets/ufo/01.png'
-import ufo02 from '../assets/ufo/02.png'
-import ufo03 from '../assets/ufo/03.png'
-import ufo04 from '../assets/ufo/04.png'
-import ufo05 from '../assets/ufo/05.png'
-import ufo06 from '../assets/ufo/06.png'
-import ufo07 from '../assets/ufo/07.png'
-import ufo08 from '../assets/ufo/08.png'
-import ufo09 from '../assets/ufo/09.png'
-import ufo10 from '../assets/ufo/10.png'
-import ufoMobile01 from '../assets/ufo mobile/01.jpg';
-import ufoMobile02 from '../assets/ufo mobile/02.jpg';
-import ufoMobile03 from '../assets/ufo mobile/03.jpg';
-import ufoMobile04 from '../assets/ufo mobile/04.jpg';
-import ufoMobile05 from '../assets/ufo mobile/05.jpg';
-import ufoMobile06 from '../assets/ufo mobile/06.jpg';
-import ufoMobile07 from '../assets/ufo mobile/07.jpg';
-import ufoMobile08 from '../assets/ufo mobile/08.jpg';
-import ufoMobile09 from '../assets/ufo mobile/09.jpg';
-import ufoMobile10 from '../assets/ufo mobile/10.jpg';
+import ufo01 from '../assets/ufo/01.png';
+import ufo02 from '../assets/ufo/02.png';
+import ufo03 from '../assets/ufo/03.png';
+import ufo04 from '../assets/ufo/04.png';
+import ufo05 from '../assets/ufo/05.png';
+import ufo06 from '../assets/ufo/06.png';
+import ufo07 from '../assets/ufo/07.png';
+import ufo08 from '../assets/ufo/08.png';
+import ufoMobile01 from '../assets/ufo mobile/01.png';
+import ufoMobile02 from '../assets/ufo mobile/02.png';
+import ufoMobile03 from '../assets/ufo mobile/03.png';
+import ufoMobile04 from '../assets/ufo mobile/04.png';
+import ufoMobile05 from '../assets/ufo mobile/05.png';
+import ufoMobile06 from '../assets/ufo mobile/06.png';
+import ufoMobile07 from '../assets/ufo mobile/07.png';
+import ptracker01 from '../assets/ptracker/01.png';
+import ptracker02 from '../assets/ptracker/02.png';
+import ptracker03 from '../assets/ptracker/03.png';
+import ptracker04 from '../assets/ptracker/04.png';
+import ptracker05 from '../assets/ptracker/05.png';
+import ptracker06 from '../assets/ptracker/06.png';
+import ptracker07 from '../assets/ptracker/07.png';
 import quizcode1 from '../assets/quizcode/1.jpg'
 import quizcode2 from '../assets/quizcode/2.jpg'
 import quizcode3 from '../assets/quizcode/3.jpg'
-import quizcode4 from '../assets/quizcode/4.jpg'
 import quizcode5 from '../assets/quizcode/5.jpg'
-import quizcode6 from '../assets/quizcode/6.jpg'
 import quizcode7 from '../assets/quizcode/7.jpg'
 import quizcode8 from '../assets/quizcode/8.jpg'
 import kamea1 from '../assets/kamea/1.jpg'
@@ -43,23 +42,21 @@ import Description from '../components/Description';
 import TechnologyContainer from '../components/TechnologyContainer';
 import TechnologyItem from '../components/TechnologyItem';
 import reactLogo from '../assets/logos/react.png';
-import jsLogo from '../assets/logos/js.png'
 import tsLogo from '../assets/logos/ts.png'
 import ionicLogo from '../assets/logos/ionic.png';
 import mongodbLogo from '../assets/logos/mongodb.png'
 import gitLogo from '../assets/logos/git.png'
+import gitLabLogo from '../assets/logos/gitlab.png'
 import nodeLogo from '../assets/logos/node.png'
 import swaggerLogo from '../assets/logos/swagger.png'
 import postmanLogo from '../assets/logos/postman.png'
-import postgreSQLlogo from '../assets/logos/postgresql.png'
-import oracleSQLlogo from '../assets/logos/oraclesql.png';
 import ScrollFadeComponent from '../components/ScrollFadeComponents';
 import { Label } from '../components/Label';
 import Container from '../components/Container';
 import MenuButton from '../components/MenuButton';
 import Link from '../components/Link';
 import CVButton from '../components/CVButton';
-import GitButton from '../components/GitButton';
+import cv from '../assets/CV.pdf'
 
 
 interface HomeProps {
@@ -146,7 +143,6 @@ const Home: FC<HomeProps> = (props) => {
                         },
                     ]}
                 />
-
                 <Stack
                     alignItems='center'
                     padding={"24px 0"}
@@ -158,46 +154,35 @@ const Home: FC<HomeProps> = (props) => {
                     <Role>
                         frontend developer
                     </Role>
-
-                    <div style={{ display: 'flex' }}>
-                        <CVButton
-                            cv={cv}
-                        />
-                        <GitButton
-                            link={'https://github.com/dagorinc'}
-                        />
-                    </div>
+                    <CVButton 
+                        cv={cv}
+                    />
                 </Stack>
-
                 <Line />
-
                 <Label>
                     Coś o mnie
                 </Label>
-
                 <Description>
-                    Programowaniem zająłem się szukając rozwiązań na monotonne czynności towarzyszące mi 
-                    w pracy, po pewnym czasie zająłem się tym na poważnie, w aktualnej pracy wcześniejsze obowiązki w dużej mierze 
-                    zostały przyćmione na rzecz tworzenia oprogramowania.
-                    Teraz zainteresowanie próbuję przekuć w zawód. Jestem studentem studiów inżynierskich.
+                    Zacząłem interesować się programowaniem, szukając sposobów na zautomatyzowanie monotonnych
+                    czynności w pracy. Z czasem pasja ta przerodziła się w poważne zajęcie, a w obecnej pracy
+                    moje wcześniejsze obowiązki ustąpiły miejsca tworzeniu oprogramowania. Teraz staram się
+                    przekuć swoje zainteresowanie w pełnoprawny zawód.
+                    <br />
+                    <br />
+                    Obecnie moim głównym projektem poza pracą jest rozwijanie aplikacji "PTRACKER" we współpracy
+                    z firmą HXS.
+                    <br />
+                    <br />
+                    Studiuję informatykę na kierunku "Inżynieria systemów informatycznych i baz danych"
                 </Description>
-
-                <Line />
-
                 <div ref={technologiesSectionRef} />
-
                 <Label>
                     Technologie
                 </Label>
-
                 <TechnologyContainer>
                     <TechnologyItem
                         name='React'
                         img={reactLogo}
-                    />
-                    <TechnologyItem
-                        name='JavaScript'
-                        img={jsLogo}
                     />
                     <TechnologyItem
                         name='TypeScript'
@@ -216,33 +201,22 @@ const Home: FC<HomeProps> = (props) => {
                         img={muiIcon}
                     />
                 </TechnologyContainer>
-
                 <TechnologyContainer>
                     <TechnologyItem
                         name='MongoDB'
                         img={mongodbLogo}
                     />
-                    <Line />
-                    <TechnologyItem
-                        name='PostgreSQL'
-                        img={postgreSQLlogo}
-                    />
-                    <TechnologyItem
-                        name='Oracle SQL'
-                        img={oracleSQLlogo}
-                    />
-                    <ScrollFadeComponent>
-                        Pisałem SQL-owe bazy z widokami, funkcjami, triggerami itp. jednak nie miałem jeszcze okazji łączyć ich z backendem
-                    </ScrollFadeComponent>
                 </TechnologyContainer>
-
                 <TechnologyContainer>
                     <TechnologyItem
                         name='Git'
                         img={gitLogo}
                     />
+                    <TechnologyItem
+                        name='GitLab'
+                        img={gitLabLogo}
+                    />
                 </TechnologyContainer>
-
                 <TechnologyContainer>
                     <TechnologyItem
                         name='Postman'
@@ -253,11 +227,8 @@ const Home: FC<HomeProps> = (props) => {
                         img={swaggerLogo}
                     />
                 </TechnologyContainer>
-
                 <Line />
-
                 <div ref={projectsSectionRef} />
-
                 <ScrollFadeComponent>
                     <ProjectName>
                         UFO
@@ -267,7 +238,6 @@ const Home: FC<HomeProps> = (props) => {
                         link='https://www.ufo-meble.pl'
                     />
                 </ScrollFadeComponent>
-
                 <ScrollFadeComponent>
                     <Description>
                         Strona internetowa sklepów meblowych
@@ -278,102 +248,114 @@ const Home: FC<HomeProps> = (props) => {
                         <br />
                         <br />
                         Uzupełnianie oferty odbywa się z poziomu panelu administratora lub przy użyciu narzędzia
-                        jakie napisałem w celu skrócenia czasu dodawania oferty na stronę. W tej chwili uzupełniana
-                        jest tylko oferta salonu w Mińsku Mazowieckim
+                        jakie napisałem w celu skrócenia czasu dodawania oferty na stronę. 
                         <br />
                         <br />
-                        Pierwsza wersja została napisana z użyciem JS, jednak po zapoznaniu się z korzyściami
-                        jakie niesie ze sobą używanie TypeScript postanowiłem ją przepisać.
+                        Oferta meblowa firm, które udostępniły API jest aktualizowana automatycznie.
                         <br />
                         <br />
                         Strona napisana w stacku MERN i TypeScript, deploymentu dokonałem z użyciem serwera VPS
                         <br />
                         <br />
-                        Technologie użyte podczas produkcji: (React, TypeScript, Node, MongoDB)
-                        <br />
-                        <br />
                         Wersja mobilna:
                     </Description>
                 </ScrollFadeComponent>
-
-                <ProjectSwiper
-                    id='ufoMobile'
-                    images={[
-                        ufoMobile06,
-                        ufoMobile01,
-                        ufoMobile02,
-                        ufoMobile03,
-                        ufoMobile04,
-                        ufoMobile05,
-                        ufoMobile07,
-                        ufoMobile08,
-                        ufoMobile09,
-                        ufoMobile10,
-                    ]}
-                />
-
+                <ScrollFadeComponent>
+                    <ProjectSwiper
+                        id='ufoMobile'
+                        images={[
+                            ufoMobile01,
+                            ufoMobile02,
+                            ufoMobile03,
+                            ufoMobile04,
+                            ufoMobile05,
+                            ufoMobile06,
+                            ufoMobile07,
+                        ]}
+                    />
+                </ScrollFadeComponent>
                 <ScrollFadeComponent>
                     <Description>
                         Wersja pc:
                     </Description>
                 </ScrollFadeComponent>
-
-                <ProjectSwiper
-                    id='ufo'
-                    pcSlides={true}
-                    images={[
-                        ufo04,
-                        ufo03,
-                        ufo02,
-                        ufo06,
-                        ufo01,
-                        ufo05,
-                        ufo07,
-                        ufo08,
-                        ufo09,
-                        ufo10,
-                    ]}
-                />
-
+                <ScrollFadeComponent>
+                    <ProjectSwiper
+                        id='ufo'
+                        pcSlides
+                        images={[
+                            ufo01,
+                            ufo02,
+                            ufo03,
+                            ufo04,
+                            ufo05,
+                            ufo06,
+                            ufo07,
+                            ufo08,
+                        ]}
+                    />
+                </ScrollFadeComponent>
                 <Line />
-
                 <ScrollFadeComponent>
                     <ProjectName>
-                        QuizCode
+                        PTRACKER
                     </ProjectName>
                 </ScrollFadeComponent>
-
                 <ScrollFadeComponent>
                     <Description>
-                        Aplikacja mobilna z quizami dla programistów
+                        Aplikacja Android/iOS przeznaczona do zarządzania linią produkcyjną sprzętu wojskowego
                         <br />
                         <br />
-                        Aplikację tworzę we współpracy z backendowcem oraz project managerem.
-                        Moją rolą w tej aplikacji jest frontend. Narzędzie z jakiego korzystam
-                        podczas pracy przy tym projekcie to IonicFramework, który pozwala na
-                        dostosowanie wyglądu GUI aplikacji do używanej platformy oraz posiada
-                        Capacitor pozwalający na korzystanie z wielu natywnych funkcji podczas
-                        pisania w zwykłym React.
+                        Aplikację rozwijam w ramach współpracy z firmą HXS z Krakowa.
                         <br />
                         <br />
                         Technologie użyte podczas produkcji: (React, TypeScript, Ionic)
                     </Description>
                 </ScrollFadeComponent>
-
-                <ProjectSwiper
-                    id='quizcode'
-                    images={[
-                        quizcode1,
-                        quizcode2,
-                        quizcode3,
-                        quizcode4,
-                        quizcode5,
-                        quizcode6,
-                        quizcode7,
-                        quizcode8,
-                    ]}
-                />
-
+                <ScrollFadeComponent>
+                    <ProjectSwiper
+                        id='quizcode'
+                        images={[
+                            ptracker01,
+                            ptracker02,
+                            ptracker03,
+                            ptracker04,
+                            ptracker05,
+                            ptracker06,
+                            ptracker07,
+                        ]}
+                    />
+                </ScrollFadeComponent>
+                <ScrollFadeComponent>
+                    <ProjectName>
+                        QuizCode
+                    </ProjectName>
+                </ScrollFadeComponent>
+                <ScrollFadeComponent>
+                    <Description>
+                        Aplikacja Android/iOS z quizami dla programistów
+                        <br />
+                        <br />
+                        Aplikację tworzę w wolnych chwilach ze znajomymi: backendowcem oraz project managerem.
+                        Moją rolą w tej aplikacji jest frontend.
+                        <br />
+                        <br />
+                        Technologie użyte podczas produkcji: (React, TypeScript, Ionic)
+                    </Description>
+                </ScrollFadeComponent>
+                <ScrollFadeComponent>
+                    <ProjectSwiper
+                        id='quizcode'
+                        images={[
+                            quizcode1,
+                            quizcode2,
+                            quizcode3,
+                            quizcode5,
+                            quizcode7,
+                            quizcode8,
+                        ]}
+                    />
+                </ScrollFadeComponent>
                 <ScrollFadeComponent>
                     <ProjectName>
                         Kamea
@@ -383,7 +365,6 @@ const Home: FC<HomeProps> = (props) => {
                         link='https://kamea.waw.pl'
                     />
                 </ScrollFadeComponent>
-
                 <ScrollFadeComponent>
                     <Description>
                         Strona - wizytówka firmy transportowej ze składem kruszyw
@@ -395,23 +376,21 @@ const Home: FC<HomeProps> = (props) => {
                         Technologie użyte podczas produkcji: (React)
                     </Description>
                 </ScrollFadeComponent>
-
-                <ProjectSwiper
-                    id='kamea'
-                    images={[
-                        kamea1,
-                        kamea2,
-                        kamea3,
-                        kamea4,
-                    ]}
-                />
-
+                <ScrollFadeComponent>
+                    <ProjectSwiper
+                        id='kamea'
+                        images={[
+                            kamea1,
+                            kamea2,
+                            kamea3,
+                            kamea4,
+                        ]}
+                    />
+                </ScrollFadeComponent>
                 <Line />
-
                 <Label ref={contactSectionRef}>
                     Kontakt
                 </Label>
-
                 <ScrollFadeComponent>
                     <Description>
                         <Link

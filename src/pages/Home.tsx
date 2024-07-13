@@ -25,6 +25,9 @@ import ptracker04 from '../assets/ptracker/04.png';
 import ptracker05 from '../assets/ptracker/05.png';
 import ptracker06 from '../assets/ptracker/06.png';
 import ptracker07 from '../assets/ptracker/07.png';
+import ptracker08 from '../assets/ptracker/08.png';
+import ptracker09 from '../assets/ptracker/09.png';
+import ptracker10 from '../assets/ptracker/10.png';
 import quizcode1 from '../assets/quizcode/1.jpg'
 import quizcode2 from '../assets/quizcode/2.jpg'
 import quizcode3 from '../assets/quizcode/3.jpg'
@@ -154,7 +157,7 @@ const Home: FC<HomeProps> = (props) => {
                     <Role>
                         frontend developer
                     </Role>
-                    <CVButton 
+                    <CVButton
                         cv={cv}
                     />
                 </Stack>
@@ -172,8 +175,6 @@ const Home: FC<HomeProps> = (props) => {
                     Obecnie moim głównym projektem poza pracą jest rozwijanie aplikacji "PTRACKER" we współpracy
                     z firmą HXS.
                     <br />
-                    <br />
-                    Studiuję informatykę na kierunku "Inżynieria systemów informatycznych i baz danych"
                 </Description>
                 <div ref={technologiesSectionRef} />
                 <Label>
@@ -243,18 +244,15 @@ const Home: FC<HomeProps> = (props) => {
                         Strona internetowa sklepów meblowych
                         <br />
                         <br />
-                        Strona pełni funkcję wizytówki oraz umożliwia klientom zapoznanie się z dostępną w salonie
-                        ofertą mebli. Strona w przyszłości będzie pełniła rolę sklepu internetowego.
+                        Strona obecnie pełni rolę wizytówki, prezentując klientom ofertę
+                        mebli dostępnych w salonie. W planach jest rozwinięcie jej funkcjonalności, aby w
+                        przyszłości stała się pełnoprawnym sklepem internetowym, tymczasowo z uwagi na warunki
+                        handlowe sklepu jest to niemożliwe. Strona jest zarządzana z poziomu panelu
+                        administratora, a część oferty jest aktualizowana na podstawie API udostępnionego
+                        przez fabryki.
                         <br />
                         <br />
-                        Uzupełnianie oferty odbywa się z poziomu panelu administratora lub przy użyciu narzędzia
-                        jakie napisałem w celu skrócenia czasu dodawania oferty na stronę. 
-                        <br />
-                        <br />
-                        Oferta meblowa firm, które udostępniły API jest aktualizowana automatycznie.
-                        <br />
-                        <br />
-                        Strona napisana w stacku MERN i TypeScript, deploymentu dokonałem z użyciem serwera VPS
+                        Strona napisana w stacku MERN i TypeScript
                         <br />
                         <br />
                         Wersja mobilna:
@@ -318,6 +316,9 @@ const Home: FC<HomeProps> = (props) => {
                         images={[
                             ptracker01,
                             ptracker02,
+                            ptracker08,
+                            ptracker09,
+                            ptracker10,
                             ptracker03,
                             ptracker04,
                             ptracker05,
@@ -336,8 +337,9 @@ const Home: FC<HomeProps> = (props) => {
                         Aplikacja Android/iOS z quizami dla programistów
                         <br />
                         <br />
-                        Aplikację tworzę w wolnych chwilach ze znajomymi: backendowcem oraz project managerem.
-                        Moją rolą w tej aplikacji jest frontend.
+                        Współpracuję z zespołem backendowym oraz kierownikiem projektu nad tworzeniem aplikacji.
+                        Odpowiadam za rozwój warstwy frontendowej, wykorzystując IonicFramework do tworzenia
+                        interfejsu użytkownika do różnych platform.
                         <br />
                         <br />
                         Technologie użyte podczas produkcji: (React, TypeScript, Ionic)

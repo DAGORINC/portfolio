@@ -373,6 +373,7 @@ const Home: FC<HomeProps> = (props) => {
                         <br />
                         <br />
                         Jest to moje pierwsze zlecenie a zarazem pierwsza strona w React.
+                        Aktualnie pracuję nad nowym projektem dla tej firmy, ponieważ strona była pisana podczas nauki i aktualnie nie spełnia już przedewszystkim moich oczekiwań.
                         <br />
                         <br />
                         Technologie użyte podczas produkcji: (React)

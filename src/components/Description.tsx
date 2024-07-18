@@ -13,7 +13,6 @@ const Description: FC<DescriptionProps> = ({
         <div
             style={{
                 color: '#e4e8f0',
-                // textAlign: 'justify',
             }}
         >
             {children}

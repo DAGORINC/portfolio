@@ -53,6 +53,7 @@ import gitLabLogo from '../assets/logos/gitlab.png'
 import nodeLogo from '../assets/logos/node.png'
 import swaggerLogo from '../assets/logos/swagger.png'
 import postmanLogo from '../assets/logos/postman.png'
+import postgreSQLLogo from '../assets/logos/postgresql.png'
 import ScrollFadeComponent from '../components/ScrollFadeComponents';
 import { Label } from '../components/Label';
 import Container from '../components/Container';
@@ -206,6 +207,10 @@ const Home: FC<HomeProps> = (props) => {
                     <TechnologyItem
                         name='MongoDB'
                         img={mongodbLogo}
+                    />
+                    <TechnologyItem
+                        name='PostgreSQL'
+                        img={postgreSQLLogo}
                     />
                 </TechnologyContainer>
                 <TechnologyContainer>
